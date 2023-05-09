@@ -1,0 +1,58 @@
+body {
+  background-color: #000;
+  margin: 0;
+}
+
+#divInput {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+#inputEntrada {
+  opacity: 0.8;
+  outline: none;
+  background-color: #00000059;
+  color: rgb(255, 255, 255);
+  min-width: 250px;
+  text-align: center;
+  border-radius: 2px;
+  border: none;
+  box-shadow: 4px 4px 60px #86c8a8;
+  font: 500 1rem monospace;
+  word-break: break-all;
+}
+
+/* #inputAgregar:hover {
+  background-color: #00ff84c3;
+} */
+
+#inputEntrada::placeholder {
+  color: rgba(240, 248, 255, 0.712);
+}
+
+#matrix2 {
+  display: flex;
+  justify-content: center;
+}
+
+#matrix {
+  margin-top: 120px;
+  font: 500 4rem monospace;
+  font-size: 50px;
+  background-color: black;
+  color: #86c8a8;
+  text-shadow: 0.01em 0.01em 0.2em #86c8a8;
+  max-width: 100%;
+}
+
+#matrix::after {
+  content: "|";
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
